@@ -1,0 +1,1 @@
+Just a basic Docker image based in mullsork/iojs-base that also installs `node-sass@^3.3.2` plus dependencies needed to install it (and some more, perhaps.)
