@@ -1,7 +1,7 @@
-FROM mullsork/iojs-base
+FROM mullsork/nodejs-base
 MAINTAINER Emil Ahlbäck "e.ahlback@gmail.com"
 
-RUN apk-install \
+RUN apk add --update \
   g++ \
   gcc \
   make \
@@ -9,4 +9,4 @@ RUN apk-install \
   python
 
 
-RUN cd /tmp && npm install node-sass@^3.3.2
+RUN cd /tmp && npm install node-sass@~3.4.1
